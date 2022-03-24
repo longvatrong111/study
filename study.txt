@@ -1,0 +1,19 @@
+[Work Experience]
+- C/C++ - embedded system
+- VueJs
+
+[Programming]
+- Algorithms and data structures
+- OOP 
+- Design pattern
+
+[Computer science]
+- Computer architecture
+- Operation system
+- Computer network
+E.g: networking, thread/process, OS memory management, 
+CPU, DB, load balance, caching, etc
+
+[Additional]
+- Go web development
+- Web application architecture
