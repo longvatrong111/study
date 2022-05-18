@@ -5,7 +5,7 @@ using namespace std;
 
 /* global variables */
 int T;
-int arr[1<<26] = {0};
+bool arr[1<<26];
 
 /* main function */
 int main () {
@@ -20,7 +20,7 @@ int main () {
         string s;
         cin >> s;
         
-        memset(arr, 0, sizeof arr);
+        for (auto& e:arr) e = false;
         list<char> curChar;
         int temp;
 
@@ -36,7 +36,7 @@ int main () {
             temp = 0;
             for (auto it = curChar.rbegin(); it != curChar.rend(); ++it) {
                 temp = temp | (1 << (*it-'A'));
-                arr[temp] = 1;
+                arr[temp] = true;
             }
         }
 
