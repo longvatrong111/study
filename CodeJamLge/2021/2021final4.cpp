@@ -7,6 +7,8 @@ using namespace std;
 int T;
 vector<int> primes;
 
+// vector<int> values;
+
 void SieveOfEratosthenes(int n) {
     // Create a boolean array "prime[0..n]" and initialize
     // all entries it as true. A value in prime[i] will
@@ -27,9 +29,23 @@ void SieveOfEratosthenes(int n) {
  
     // Print all prime numbers
     for (int p = 2; p <= n; p++) if (prime[p]) primes.push_back(p);
+
+    // // get values
+    // values = vector<int>(6e6 + 5);
+    // values[1] = 1;
+    // values[2] = 1;
+    // values[3] = 1;
+
+    // for (int i = 1; i < primes.size() - 1; i++) {
+    //     values[primes[i]] = min(primes[i] - primes[i - 1], primes[i + 1] - primes[i]);
+    //     for (int mid = primes[i] + 1; mid < primes[i + 1]; mid++) {
+    //         values[mid] = min(primes[i + 1] - mid, mid - primes[i]);
+    //     }
+    // }
 }
 
 int getScore(int n) {
+    return values[n];
     if (n == 0) return 2;
     if (n == 1) return 1;
     if (n == 2) return 1;
@@ -78,7 +94,6 @@ int main () {
         int bit = 0;
         int sum = 0;
         calScore(nums, scores, bit, sum);
-
         
         vector<vector<int>> dp(m, vector<int>(1 << n, -1));
         for (int i = 0; i < (1 << n); ++i) dp[0][i] = scores[i];
