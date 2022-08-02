@@ -6,5 +6,6 @@
         "xstring": "cpp",
         "xtree": "cpp",
         "xutility": "cpp"
-    }
+    },
+    "explorer.sortOrder": "type"
 }

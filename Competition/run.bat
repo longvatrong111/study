@@ -1,3 +1,3 @@
-rm test
-g++ -o test .\template.cpp -std=c++14
-./test < input.txt
+rm bin.exe
+g++ -o bin ./template.cpp -std=c++14
+.\bin < ./input.txt > ./output.txt
