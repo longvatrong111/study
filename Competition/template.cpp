@@ -3,11 +3,15 @@ using namespace std;
 
 #define TESTMOD true;
 
+#define int int64_t
+#define endl '\n'
+#define mod 1000000007
+
 /* global variables */
 int T;
 
 /* main function */
-int main () {
+int32_t main () {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);

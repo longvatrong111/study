@@ -1,5 +1,4 @@
 #define int int64_t
-#define endl '\n'
 #define mod 1000000007
 
 int N = 5000;
