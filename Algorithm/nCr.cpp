@@ -1,7 +1,7 @@
 #define int int64_t
 #define mod 1000000007
+#define N 5000
 
-int N = 5000;
 int fact[N];
 
 void generateFact() {
@@ -34,3 +34,6 @@ int nAr(int n, int r) {
     int ans = (num * powerLogN(den, mod - 2)) % mod;
     return ans;
 }
+
+int gcd(int a, int b) { return b == 0 ? a : gcd(b, a % b); }
+int lcm(int a, int b) { return a * (b / gcd(a, b)); }
