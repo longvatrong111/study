@@ -2,7 +2,7 @@ class SegmentTree {
 private:
     vector<int> nums;
     vector<int> maxTree;
-    vector<long long> sumTree; 
+    vector<int> sumTree; 
     int n;
     
     int left(int p) {
@@ -48,7 +48,7 @@ private:
         return (nums[p1] <= nums[p2]) ? p1 : p2;
     }
 
-    long long rsq(int p, int L, int R, int i, int j) {
+    int rsq(int p, int L, int R, int i, int j) {
         if (i > R || j < L) return 0;
         if (L >= i && R <= j) return sumTree[p];
 

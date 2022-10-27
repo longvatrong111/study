@@ -1,8 +1,8 @@
 #define int int64_t
 #define mod 1000000007
-#define N 5000
+#define N_COUNT 5000
 
-int fact[N];
+int fact[N_COUNT];
 
 void generateFact() {
     fact[0] = 1;
