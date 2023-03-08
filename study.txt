@@ -1,9 +1,0 @@
-[Target 2022 - second half]
-- LGE coding expert
-	+ Algorithm: Leetcode: 2000+, codeforce: 1700+
-	+ Project: finish tasks
-	+ Back up plan: retire and find a new job
-- Google interview
-	+ Leetcode
-	+ IELTS: 7.5 (Speaking: 6.5)
-- Backend job
