@@ -4,31 +4,39 @@
 
 int fact[N_COUNT];
 
-void generateFact() {
+void generateFact()
+{
     fact[0] = 1;
-    for (int i = 1; i < N; ++i) fact[i] = (fact[i - 1] * i) % mod;
+    for (int i = 1; i < N_COUNT; ++i)
+        fact[i] = (fact[i - 1] * i) % mod;
 }
 
-int powerLogN(int a, int n) {
-    if (n == 0) return 1;
-    if (n == 1) return a;
-    if (n%2) {
-        int sub = powerLogN(a, n/2);
-        return (((sub*sub)%mod)*a)%mod;
+int powerLogN(int a, int n)
+{
+    if (n == 0)
+        return 1;
+    if (n == 1)
+        return a;
+    if (n % 2)
+    {
+        int sub = powerLogN(a, n / 2);
+        return (((sub * sub) % mod) * a) % mod;
     }
 
-    int sub = powerLogN(a, n/2);
-    return (sub*sub)%mod;
+    int sub = powerLogN(a, n / 2);
+    return (sub * sub) % mod;
 }
 
-int nCr(int n, int r) {
+int nCr(int n, int r)
+{
     int num = fact[n];
     int den = (fact[r] * fact[n - r]) % mod;
     int ans = (num * powerLogN(den, mod - 2)) % mod;
     return ans;
 }
 
-int nAr(int n, int r) {
+int nAr(int n, int r)
+{
     int num = fact[n];
     int den = fact[n - r];
     int ans = (num * powerLogN(den, mod - 2)) % mod;
