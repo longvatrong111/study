@@ -98,7 +98,7 @@ class ST {
 
     void build() {  // build the tree
         for (int i = n - 1; i > 0; --i)
-            tree[i] = max(tree[i << 1], tree[i << 1 | 1]);
+            tree[i] = tree[i << 1] + tree[i << 1 | 1];
     }
 
     void modify(int p, int value) {  // set value at position p
@@ -108,10 +108,10 @@ class ST {
 
     int query(int l, int r) {  // sum on interval [l, r]
         r++;
-        int res = INT_MIN;
+        int res = 0;
         for (l += n, r += n; l < r; l >>= 1, r >>= 1) {
-            if (l & 1) res = max(res, tree[l++]);
-            if (r & 1) res = max(res, tree[--r]);
+            if (l & 1) res += tree[l++];
+            if (r & 1) res += tree[--r];
         }
         return res;
     }
