@@ -1,0 +1,1 @@
+copy .\template.cpp .\competition.cpp
