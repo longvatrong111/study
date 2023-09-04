@@ -18,6 +18,6 @@ Setting -> C/C++ extension -> Formatting -> C_Cpp Clang_format_fallback Style
 - Install MSYS2
 - Use MSYS2 to install mingw64: 
 pacman -S mingw-w64-ucrt-x86_64-gcc
-- Add system variable path: find in msy64/ucrt64/bin
+- Add system variable path: find in msy64/ucrt64 and add bin folder of mingw64
 
 2.2 Build
