@@ -12,6 +12,7 @@
 (*) Formatting: To keep formatting of code unchanged:
 Setting -> C/C++ extension -> Formatting -> C_Cpp Clang_format_fallback Style
 {BasedOnStyle: Google, IndentWidth: 4}
+
 ---
 **2. HOW TO SET UP ENVIRONMENT AND USE COMPETITION FOLDER**
 2.1. Install mingw64
