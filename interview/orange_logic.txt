@@ -1,0 +1,27 @@
+[Company]
+Product: B2B products, provide software for bussiness. Data assessment.
+- DAM (digital assessment management)
+- MAM (media assessment management)
+- MRM (media resource management)
+Customers are entertainment, tech companies, health companies,...
+
+Tech stack:
+[ok] A Bachelor’s Degree
+[ok] Proficiency in English (both verbal and written)
+[ok] Understanding of software development
+[ok] Algorithms & data structures, passion for intellectual challenges
+[ok] Strong self-discipline, rational thinking
+[x ] Backend programming languages
+[x ] At least 3 years practical experience on a web-based application
+[- ] SQL or other database (optional)
+[- ] C#, .NET (optional)
+
+[Introduce myself]
+
+[My career path]
+- Become expert in technical path: software architecture, solution architecture or CTO
+- Start with being a good software engineer, who unceasingly learns new knowledge and apply to work to produce high quality code
+
+1. How the company and my career path match?
+2. How did I resolve my conflict with teamate in previous jobs?
+3. Tell about a hard problem I encountered in the past, how to solve it?
