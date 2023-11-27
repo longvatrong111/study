@@ -1,0 +1,6 @@
+                Algo        backend/sys design     advanced C++/OS     Exp
+Amazon          X           X                
+Microsoft       X           X
+Google Taiwan   X           X
+WQ              X           X                      X                   X
+DTL             X           X                      X                   X
