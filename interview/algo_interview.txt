@@ -1,0 +1,13 @@
+[Framework]
+- Verify question: understand the problem
+- Discuss idea   : 
+- Implement code : best implementation
+- Testing        : give test cases
+
+[How to come up with test cases]
+- Understand the problem
+- Normal (not to simple) cases -> edge cases -> extensive test suite
+
+Tips:
+- Follow code line by line
+- Boundaries -> test cases
