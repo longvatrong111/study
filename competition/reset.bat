@@ -1,1 +1,1 @@
-copy .\template.cpp .\competition.cpp
+cp ./template.cpp ./competition.cpp
